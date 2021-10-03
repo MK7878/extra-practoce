@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior:smooth;
+}
+body{
+	overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.left{
+   float: left;
+}
+
+.right{
+     float:  right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}   
+img{
+    max-width: 100%;
+}
+.defaultBtn{
+    background: linear-gradient(45deg, #8dcd37, #43cb83);
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px 18px;
+    transition: 0.3s;
+}
+
+
+
+
+.navWrapper{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url(./img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.navInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLogo{
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+}
+.navbar{
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 8px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #8DCD37;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.headerText{
+   position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.headerText h1{
+    margin-bottom: 20px;
+    font-size: 39px;
+}
+.headerText p{
+    margin-bottom: 30px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+
+.courseArea{
+    margin-bottom: 100px;
+
+}
+.courseArea h1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.courseWrapper{
+    display: flex;
+    justify-content: center;
+}
+.courseBox{
+    flex-basis: 40%;
+    text-align: center;
+    padding: 15px;
+    transition: 0.5s;
+    padding: 35px;
+    flex-wrap: wrap;
+}
+.courseBox:hover{
+    background: #a7d3a7;
+    border-radius: 38px;
+    padding: 35px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.courseBox span{
+    font-size: 40px;
+    background: #f4711d;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.courseBox h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #80ca80;
+}
+
+.clientArea{
+    margin-bottom: 100px;
+}
+.clientArea h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.allBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{
+    flex-basis: 30%;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    margin: 15px;
+}
+.box img{
+    width: 350px;
+    height: auto;
+}
+.clientArea .box {
+    overflow: hidden;
+
+}
+.clientArea .box img{
+    transition: 0.5s;
+}
+.clientArea .box:hover img{
+    transform: scale(1.2);
+}
+.box{
+    position: relative;
+}
+.box .content{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.514);
+    color: #fff;
+    transition: 0.5s;
+   transform: translateY(0);
+   visibility: hidden;
+   opacity: 0;
+    transition: 0.5s;
+    display: block;
+ 
+}
+.box:hover .content{
+   transform: translateY(1.4);
+   visibility: visible;
+   opacity: 1;
+}
+
+.boxConWrapper{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.aboutUsArea{
+    margin-bottom: 100px;
+}
+.aboutUsArea h1{
+    margin-bottom: 30px;
+}
+.aboutDes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutLeft{
+    flex-basis: 50%;
+}
+.aboutRight{
+    flex-basis: 47%;
+}
+.aboutRight span{
+    background: #8dcd37;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 7px;
+}
+.aboutRight h2{
+    margin-bottom: 20px;
+}
+.aboutRight p{
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+
+.contact{
+    margin-bottom: 100px;
+}
+.contact h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contactContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contactLeft{
+    flex-basis: 40%;
+}
+.contactLeft h2{
+    margin-bottom: 30px;
+}
+.contactRight{
+    flex-basis: 50%;
+}
+.contact form input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 16px;
+    color: blue;
+    border: none;
+    border: 1px solid #8dcd37;
+}
+.contact form textarea{
+    padding: 15px;
+    width: 100%;
+}
+.contact form input:focus{
+    border: none;
+   border: 1px solid #8dcd37;
+}
+footer h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #42ca82;
+    color: #fff;
+}
+
+
+
+.nav .fas{
+    display: none;
+}
+@media (max-width:768px){
+   
+    .navLogo{
+        margin-left: 40px;
+    }
+    .courseWrapper{
+        flex-wrap: wrap;
+    }
+    .courseBox{
+        flex-basis: 90%;
+    }
+    .navbar ul li{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 200px;
+        background: #8dcd37;
+        z-index: 22;
+
+        transition: 1s;
+    }
+    .headerText{
+        width: 90%;
+    }
+    .headerText h1{
+        font-size: 24px;
+    }
+    .nav .fas{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    #Bars{
+        margin-right:50px ;
+    }
+    .clientArea .box{
+        /* width: 100%; */
+        /* height: auto; */
+        margin: 20px auto;
+    }
+    .box{
+        flex-basis: 60%;
+    }
+   
+    .aboutLeft{
+        flex-basis: 100%;
+    }
+    .aboutRight{
+        flex-basis: 100%;
+    }
+    .aboutUsArea{
+        margin: 0 40px;
+    }
+    .aboutRight h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .aboutRight p{
+        margin-bottom: 50px;
+    }
+
+
+    .contactLeft{
+        flex-basis: 100%;
+        padding: 20px;
+    }
+    .contactLeft h2{
+        margin-bottom: 30px;
+    }
+    .contactRight{
+        flex-basis: 100%;
+        padding: 20px;
+    }
+
+   
+}
